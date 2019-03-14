@@ -1,0 +1,4 @@
+```bash
+dune build @check
+cat .merlin | grep "FLG -ppx"
+```

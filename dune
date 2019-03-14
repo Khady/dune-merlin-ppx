@@ -1,0 +1,11 @@
+(library
+ (name demo)
+ (modules demo)
+ (libraries lwt.unix)
+ (preprocess (pps lwt_ppx ppx_expect)))
+
+(executable
+ (name main)
+ (modules main)
+ (libraries lwt.unix demo)
+ (preprocess (pps lwt_ppx)))
